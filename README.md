@@ -12,4 +12,4 @@ Optionally the control service port can be specified with the `CONTROL_PORT` env
 
 ## Example
 
-    docker run -v .:/certs -e CONTROL_SERVICE=1.2.3.4 move a1b2c3 d4e5f6
+    docker run -v .:/certs -e CONTROL_SERVICE=1.2.3.4 move a1b2c3 d4e5f6 robhaswell/flocker-volumes
