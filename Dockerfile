@@ -5,4 +5,4 @@ VOLUME /certs
 ENV CONTROL_SERVICE 127.0.0.1
 
 RUN pip install git+https://github.com/clusterhq/unofficial-flocker-tools.git
-ENTRYPOINT ["flocker-volumes", "--certs-path", "/certs", "--control-service", $CONTROL_SERVICE]
+ENTRYPOINT /usr/local/bin/flocker-volumes --certs-path /certs --control-service $CONTROL_SERVICE
